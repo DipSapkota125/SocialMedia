@@ -136,8 +136,8 @@ function App() {
        </Route>
       
 
-       <Route exact path="/admin/dashboard" element={<ProtectedRoute />} >
-       <Route exact path="/admin/dashboard" element={<Dashboard />} />
+       <Route exact path="/admin/dashboard"  element={<ProtectedRoute />} >
+       <Route exact path="/admin/dashboard"  element={<Dashboard />} />
        </Route>
 
        <Route exact path="/admin/products" element={<ProtectedRoute />} >

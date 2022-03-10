@@ -1,6 +1,5 @@
 import React,{useEffect} from 'react';
 import "./Dashboard.css";
-import Sidebar from './Sidebar';
 import { Typography } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import { Doughnut, Line } from "react-chartjs-2";
@@ -9,6 +8,8 @@ import { getAdminProduct } from "../../Actions/productAction";
 import { getAllOrders } from "../../Actions/orderAction";
 import { getAllUsers } from "../../Actions/userAction";
 import MetaData from "../layout/MetaData";
+
+import Sidebar from "./Sidebar";
 
 const Dashboard = () => {
   const dispatch = useDispatch();

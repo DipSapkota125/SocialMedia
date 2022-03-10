@@ -35,8 +35,6 @@ cloudinary.config({
 });
 
 
-
-
 const app = express();
 app.use(express.json());
 app.use(morgan('dev'));
@@ -47,7 +45,7 @@ app.use(fileUpload());
 app.use(cors());
 
 //Routes
-app.use('/api/v1', require('./routes/productRoute'));
+app.use('/api/v1', require('./routes/productRoute')); 
 app.use('/api/v1',require("./routes/userRoute"));
 app.use('/api/v1',require("./routes/orderRoute"));
 app.use('/api/v1',require("./routes/paymentRoute"));
