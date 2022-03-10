@@ -52,7 +52,7 @@ app.use('/api/v1',require("./routes/userRoute"));
 app.use('/api/v1',require("./routes/orderRoute"));
 app.use('/api/v1',require("./routes/paymentRoute"))
 
-app.use(express.static(path.join(__dirname, '../frontend/build')));
+// app.use(express.static(path.join(__dirname, '../frontend/build')));
 
 // app.get("*", (req, res) => {
 //     res.sendFile(path.resolve(__dirname, '../frontend/build/index.html'));
